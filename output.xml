@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-15T13:06:11.440540" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Demo" source="C:\Robot_Framework_basics\Robot_framework_demo\Tests\Test_Demo.robot">
+<test id="s1-t1" name="Login with correct Username and Password" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-15T13:06:12.205503" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>url=https://the-internet.herokuapp.com/login</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-15T13:06:12.205189" elapsed="6.054233"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-15T13:06:18.265636" level="INFO">Typing text 'tomsmith' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T13:06:18.262684" elapsed="0.281836"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-15T13:06:18.545453" level="INFO">Typing text 'SuperSecretPassword!' into text field 'password'.</msg>
+<arg>password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T13:06:18.545077" elapsed="0.217476"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-15T13:06:18.763563" level="INFO">Clicking button 'class:radius'.</msg>
+<arg>class:radius</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T13:06:18.763094" elapsed="0.980505"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-15T13:06:19.804960" level="INFO">Element 'id=flash' contains text 'You logged into a secure area!'.</msg>
+<arg>id=flash</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-05-15T13:06:19.746816" elapsed="0.058317"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-05-15T13:06:19.806191" level="INFO">Clicking link 'Logout'.</msg>
+<arg>Logout</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T13:06:19.805706" elapsed="0.958701"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-15T13:06:20.766325" elapsed="2.316173"/>
+</kw>
+<status status="PASS" start="2025-05-15T13:06:12.203582" elapsed="10.880205"/>
+</test>
+<status status="PASS" start="2025-05-15T13:06:11.444912" elapsed="11.642814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Demo" id="s1" pass="1" fail="0" skip="0">Test Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

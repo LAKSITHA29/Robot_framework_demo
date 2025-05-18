@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 
 Search in google
     Open Browser    https://www.google.com/    chrome           
-    Input text      name=q                     Selenium
+    Input text      //textarea[@class="gLFyf"]                    Selenium
     # Click Button    class:gNO89b
     Press Keys      name:q    ENTER
     Page Should Contain             https://www.selenium.dev/
@@ -16,7 +16,7 @@ Search in google
 
 Search in google with anotherkey
     Open Browser    https://www.google.com/    chrome           
-    Input text      name=q                     robotframework
+    Input text      //textarea[@class="gLFyf"]                     robotframework
     # Click Button    class:gNO89b
     Press Keys      name:q    ENTER
     Page Should Contain  https://robotframework.org/

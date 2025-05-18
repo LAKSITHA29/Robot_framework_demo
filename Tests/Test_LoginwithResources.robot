@@ -4,7 +4,8 @@ Library    SeleniumLibrary
 Resource    resources.robot
 
 *** Variables ***
-${Login_Error_message}    css:oxd-text oxd-text--p oxd-alert-content-text    
+${Login_Error_message}    xpath://p[@class="oxd-text oxd-text--p oxd-alert-content-text"] 
+# ...    css:oxd-text oxd-text--p oxd-alert-content-text    
 ${Dashboard_text}    xpath://h6[text()="Dashboard"]
 
 *** Test Cases ***
@@ -29,11 +30,12 @@ Fill the Login form
     [Arguments]    ${username}    ${password}
     Input Text    css:input[name=username]    ${username} 
     Input Text    css:input[name=password]    ${password}   
-    Click Button    css:.orangehrm-login-button
+    Click Button    css:.orangehrm-login-button 
 
 Verify error meassage is correct
     Element Text Should Be    ${Login_Error_message}    Invalid credentials
 
 Verify Dashboardpage opens
-     Element Text Should Be    ${Dashboard_text}    Dashboard
-    
+    # Element Text Should Be    ${Dashboard_text}    Dashboard
+    Wait Until Element Is Visible    ${Dashboard_text}    timeout=10s
+    Element Text Should Be           ${Dashboard_text}    Dashboard

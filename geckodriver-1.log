@@ -1,0 +1,12 @@
+1747395665179	geckodriver	INFO	Listening on 127.0.0.1:51084
+1747395668296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51085" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\rust_mozprofileaaQCmV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747395668896	Marionette	INFO	Marionette enabled
+1747395669071	Marionette	INFO	Listening on port 51096
+WebDriver BiDi listening on ws://127.0.0.1:51085
+Read port: 51096
+1747395669258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1747395909035	Marionette	INFO	Stopped listening on port 51096
+Dynamically enable window occlusion 1

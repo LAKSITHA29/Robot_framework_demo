@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-16T07:39:09.657527" rpa="false" schemaversion="5">
+<suite id="s1" name="Test radiobtn" source="C:\Robot_Framework_basics\Robot_framework_demo\Tests\Test_radiobtn.robot">
+<test id="s1-t1" name="Radiobutton" line="8">
+<kw name="Open the Browser with the URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-16T07:39:10.534940" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-16T07:39:10.534594" elapsed="2.246281"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-16T07:39:12.784427" level="INFO">Opening url 'https://demo.automationtesting.in/Register.html'</msg>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-16T07:39:12.783389" elapsed="2.132516"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-16T07:39:14.922301" elapsed="0.314760"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-16T07:39:15.240175" elapsed="0.003935"/>
+</kw>
+<status status="PASS" start="2025-05-16T07:39:10.533511" elapsed="4.711447"/>
+</kw>
+<kw name="Select impressive options from 3 radio buttons">
+<kw name="Page Should Contain Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-16T07:39:15.410387" level="INFO">Current page contains radio button 'radiooptions'.</msg>
+<arg>radiooptions</arg>
+<doc>Verifies radio button ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-05-16T07:39:15.247119" elapsed="0.163510"/>
+</kw>
+<kw name="Page Should Not Contain Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-16T07:39:20.521026" level="INFO">Current page does not contain radio button 'checkbox2'.</msg>
+<arg>checkbox2</arg>
+<doc>Verifies radio button ``locator`` is not found from current page.</doc>
+<status status="PASS" start="2025-05-16T07:39:15.412839" elapsed="5.108525"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-16T07:39:20.526730" level="INFO">Selecting 'FeMale' from radio button 'radiooptions'.</msg>
+<arg>radiooptions</arg>
+<arg>FeMale</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-05-16T07:39:20.525509" elapsed="0.374910"/>
+</kw>
+<status status="PASS" start="2025-05-16T07:39:15.246352" elapsed="5.658325"/>
+</kw>
+<kw name="Verify that the radio button is selected">
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-16T07:39:20.918529" level="INFO">Selecting 'FeMale' from radio button 'radiooptions'.</msg>
+<arg>radiooptions</arg>
+<arg>FeMale</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-05-16T07:39:20.917489" elapsed="0.082764"/>
+</kw>
+<status status="PASS" start="2025-05-16T07:39:20.915330" elapsed="0.100775"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-16T07:39:21.019212" elapsed="2.800513"/>
+</kw>
+<status status="PASS" start="2025-05-16T07:39:10.532246" elapsed="13.289346"/>
+</test>
+<doc>To validate the radiobuttons in DemoSite</doc>
+<status status="PASS" start="2025-05-16T07:39:09.854501" elapsed="14.018863"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test radiobtn" id="s1" pass="1" fail="0" skip="0">Test radiobtn</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -2,7 +2,8 @@
 Documentation  To validate the login form using valid credentials 
 Library    SeleniumLibrary
 Library    Collections
-Test Teardown    Close Browser 
+Test Teardown    Close Browser
+Resource    resources.robot
 
 *** Variables ***
 ${valid_username}    Admin   

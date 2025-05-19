@@ -1,248 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-18T22:10:34.933723" rpa="false" schemaversion="5">
-<suite id="s1" name="Test LoginwithResources" source="C:\Robot_Framework_basics\Robot_framework_demo\Tests\Test_LoginwithResources.robot">
-<test id="s1-t1" name="Validate unsuccessful Login" line="13">
-<kw name="Open the Browser with the URL" owner="resources">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T10:48:01.275533" rpa="false" schemaversion="5">
+<suite id="s1" name="Test DragDrop" source="C:\Robot_Framework_basics\Robot_framework_demo\Tests\Test_DragDrop.robot">
+<test id="s1-t1" name="Verify that the user can drag and drop the elements" line="6">
+<kw name="Open the Browser with the URL">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:35.386349" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
+<msg time="2025-05-19T10:48:01.634240" level="INFO">Opening browser 'firefox' to base url ''.</msg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-18T22:10:35.386043" elapsed="1.822882"/>
+<status status="PASS" start="2025-05-19T10:48:01.633968" elapsed="8.451278"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:37.209646" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
-<arg>${url}</arg>
+<msg time="2025-05-19T10:48:10.086707" level="INFO">Opening url 'https://demoqa.com/droppable'</msg>
+<arg>url=https://demoqa.com/droppable</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-18T22:10:37.209295" elapsed="3.855558"/>
+<status status="PASS" start="2025-05-19T10:48:10.086034" elapsed="9.301761"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-18T22:10:41.065363" elapsed="0.059002"/>
+<status status="PASS" start="2025-05-19T10:48:19.388337" elapsed="0.015485"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-18T22:10:41.124703" elapsed="0.002639"/>
+<status status="PASS" start="2025-05-19T10:48:19.404225" elapsed="0.013511"/>
 </kw>
-<status status="PASS" start="2025-05-18T22:10:35.385028" elapsed="5.742573"/>
+<status status="PASS" start="2025-05-19T10:48:01.633044" elapsed="17.785080"/>
 </kw>
-<kw name="Fill the Login form">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:41.130932" level="INFO">Typing text '2345' into text field 'css:input[name=username]'.</msg>
-<arg>css:input[name=username]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-18T22:10:41.129453" elapsed="0.692768"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:41.822797" level="INFO">Typing text '12345' into text field 'css:input[name=password]'.</msg>
-<arg>css:input[name=password]</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-18T22:10:41.822459" elapsed="0.147977"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:41.971480" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
-<arg>css:.orangehrm-login-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-18T22:10:41.971095" elapsed="0.135074"/>
-</kw>
-<arg>${invalid_username}</arg>
-<arg>${invalid_password}</arg>
-<status status="PASS" start="2025-05-18T22:10:41.128228" elapsed="0.978244"/>
-</kw>
-<kw name="Verify error meassage is correct">
+<kw name="Verify the element text before drag">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:42.108088" level="INFO">Verifying element 'xpath://p[@class="oxd-text oxd-text--p oxd-alert-content-text"]' contains exact text 'Invalid credentials'.</msg>
-<arg>${Login_Error_message}</arg>
-<arg>Invalid credentials</arg>
+<msg time="2025-05-19T10:48:19.420949" level="INFO">Verifying element 'id=droppable' contains exact text 'Drop here'.</msg>
+<arg>id=droppable</arg>
+<arg>Drop here</arg>
+<arg>timeout=5</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-18T22:10:42.107580" elapsed="1.668864"/>
+<status status="PASS" start="2025-05-19T10:48:19.419944" elapsed="0.079521"/>
 </kw>
-<status status="PASS" start="2025-05-18T22:10:42.107050" elapsed="1.669708"/>
+<status status="PASS" start="2025-05-19T10:48:19.419112" elapsed="0.080860"/>
 </kw>
-<kw name="Close Browser Session" owner="resources">
-<kw name="Close Browser" owner="SeleniumLibrary">
+<kw name=" Drag And Drop the element">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-05-19T10:48:19.501403" elapsed="1.080602"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:48:19.500862" elapsed="1.081310"/>
+</kw>
+<kw name=" Verify the element text before drop">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:48:20.583519" level="INFO">Verifying element 'id=droppable' contains exact text 'Dropped!'.</msg>
+<arg>id=droppable</arg>
+<arg>Dropped!</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T10:48:20.583174" elapsed="0.028943"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:48:20.582703" elapsed="0.029584"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-18T22:10:43.779489" elapsed="2.494065"/>
+<status status="PASS" start="2025-05-19T10:48:20.612737" elapsed="3.733488"/>
 </kw>
-<status status="PASS" start="2025-05-18T22:10:43.778776" elapsed="2.495222"/>
-</kw>
-<tag>Smoke Regression</tag>
-<status status="PASS" start="2025-05-18T22:10:35.383840" elapsed="10.891453"/>
+<status status="PASS" start="2025-05-19T10:48:01.631780" elapsed="22.715317"/>
 </test>
-<test id="s1-t2" name="Validate successful Login" line="20">
-<kw name="Open the Browser with the URL" owner="resources">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:46.283897" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-18T22:10:46.283286" elapsed="2.018358"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:48.302425" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-18T22:10:48.302046" elapsed="4.203089"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-18T22:10:52.505432" elapsed="0.037399"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>5</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-18T22:10:52.543151" elapsed="0.002239"/>
-</kw>
-<status status="PASS" start="2025-05-18T22:10:46.280716" elapsed="6.264870"/>
-</kw>
-<kw name="Fill the Login form">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:52.547767" level="INFO">Typing text 'Admin' into text field 'css:input[name=username]'.</msg>
-<arg>css:input[name=username]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-18T22:10:52.547100" elapsed="0.920025"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:53.467957" level="INFO">Typing text 'admin123' into text field 'css:input[name=password]'.</msg>
-<arg>css:input[name=password]</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-18T22:10:53.467488" elapsed="0.146128"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:53.614085" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
-<arg>css:.orangehrm-login-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-18T22:10:53.613841" elapsed="0.133308"/>
-</kw>
-<arg>${valid_username}</arg>
-<arg>${valid_password}</arg>
-<status status="PASS" start="2025-05-18T22:10:52.546236" elapsed="1.201130"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-18T22:10:53.748405" level="INFO">Clicking element '//button'.</msg>
-<msg time="2025-05-18T22:10:55.567372" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-18T22:10:55.567824" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
-  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF67546CF65+75717]
-	GetHandleVerifier [0x00007FF67546CFC0+75808]
-	(No symbol) [0x00007FF675238F9A]
-	(No symbol) [0x00007FF67524F3D4]
-	(No symbol) [0x00007FF67524DEA3]
-	(No symbol) [0x00007FF6752416C9]
-	(No symbol) [0x00007FF67523F54F]
-	(No symbol) [0x00007FF675243A0C]
-	(No symbol) [0x00007FF675243ADF]
-	(No symbol) [0x00007FF6752916CD]
-	(No symbol) [0x00007FF675282300]
-	(No symbol) [0x00007FF6752B737A]
-	(No symbol) [0x00007FF675281C46]
-	(No symbol) [0x00007FF6752B7590]
-	(No symbol) [0x00007FF6752DF39C]
-	(No symbol) [0x00007FF6752B7153]
-	(No symbol) [0x00007FF675280421]
-	(No symbol) [0x00007FF6752811B3]
-	GetHandleVerifier [0x00007FF67576D74D+3223469]
-	GetHandleVerifier [0x00007FF675767CF2+3200338]
-	GetHandleVerifier [0x00007FF675785B23+3322755]
-	GetHandleVerifier [0x00007FF675486A3A+180890]
-	GetHandleVerifier [0x00007FF67548E13F+211359]
-	GetHandleVerifier [0x00007FF6754752B4+109332]
-	GetHandleVerifier [0x00007FF675475462+109762]
-	GetHandleVerifier [0x00007FF67545BA79+4825]
-	BaseThreadInitThunk [0x00007FFA52EB7374+20]
-	RtlUserThreadStart [0x00007FFA53EFCC91+33]
-</msg>
-<arg>//button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-05-18T22:10:53.747919" elapsed="1.832862">StaleElementReferenceException: Message: stale element reference: stale element not found
-  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF67546CF65+75717]
-	GetHandleVerifier [0x00007FF67546CFC0+75808]
-	(No symbol) [0x00007FF675238F9A]
-	(No symbol) [0x00007FF67524F3D4]
-	(No symbol) [0x00007FF67524DEA3]
-	(No symbol) [0x00007FF6752416C9]
-	(No symbol) [0x00007FF67523F54F]
-	(No symbol) [0x00007FF675243A0C]
-	(No symbol) [0x00007FF675243ADF]
-	(No symbol) [0x00007FF6752916CD]
-	(No symbol) [0x00007FF675282300]
-	(No symbol) [0x00007FF6752B737A]
-	(No symbol) [0x00007FF675281C46]
-	(No symbol) [0x00007FF6752B7590]
-	(No symbol) [0x00007FF6752DF39C]
-	(No symbol) [0x00007FF6752B7153]
-	(No symbol) [0x00007FF675280421]
-	(No symbol) [0x00007FF6752811B3]
-	GetHandleVerifier [0x00007FF67576D74D+3223469]
-	GetHandleVerifier [0x00007FF675767CF2+3200338]
-	GetHandleVerifier [0x00007FF675785B23+3322755]
-	GetHandleVerifier [0x00007FF675486A3A+180890]
-	GetHandleVerifier [0x00007FF67548E13F+211359]
-	GetHandleVerifier [0x00007FF6754752B4+109332]
-	GetHandleVerifier [0x00007FF675475462+109762]
-	GetHandleVerifier [0x00007FF67545BA79+4825]
-	BaseThreadInitThunk [0x00007FFA52EB7374+20]
-	RtlUserThreadStart [0x00007FFA53EFCC91+33]
-</status>
-</kw>
-<kw name="Verify Dashboardpage opens">
-<status status="NOT RUN" start="2025-05-18T22:10:55.581939" elapsed="0.000399"/>
-</kw>
-<kw name="Close Browser Session" owner="resources">
-<status status="NOT RUN" start="2025-05-18T22:10:55.583841" elapsed="0.000139"/>
-</kw>
-<tag>Smoke Regression</tag>
-<status status="FAIL" start="2025-05-18T22:10:46.278911" elapsed="9.305907">StaleElementReferenceException: Message: stale element reference: stale element not found
-  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF67546CF65+75717]
-	GetHandleVerifier [0x00007FF67546CFC0+75808]
-	(No symbol) [0x00007FF675238F9A]
-	(No symbol) [0x00007FF67524F3D4]
-	(No symbol) [0x00007FF67524DEA3]
-	(No symbol) [0x00007FF6752416C9]
-	(No symbol) [0x00007FF67523F54F]
-	(No symbol) [0x00007FF675243A0C]
-	(No symbol) [0x00007FF675243ADF]
-	(No symbol) [0x00007FF6752916CD]
-	(No symbol) [0x00007FF675282300]
-	(No symbol) [0x00007FF6752B737A]
-	(No symbol) [0x00007FF675281C46]
-	(No symbol) [0x00007FF6752B7590]
-	(No symbol) [0x00007FF6752DF39C]
-	(No symbol) [0x00007FF6752B7153]
-	(No symbol) [0x00007FF675280421]
-	(No symbol) [0x00007FF6752811B3]
-	GetHandleVerifier [0x00007FF67576D74D+3223469]
-	GetHandleVerifier [0x00007FF675767CF2+3200338]
-	GetHandleVerifier [0x00007FF675785B23+3322755]
-	GetHandleVerifier [0x00007FF675486A3A+180890]
-	GetHandleVerifier [0x00007FF67548E13F+211359]
-	GetHandleVerifier [0x00007FF6754752B4+109332]
-	GetHandleVerifier [0x00007FF675475462+109762]
-	GetHandleVerifier [0x00007FF67545BA79+4825]
-	BaseThreadInitThunk [0x00007FFA52EB7374+20]
-	RtlUserThreadStart [0x00007FFA53EFCC91+33]
-</status>
-</test>
-<doc>Tests to login to Login page</doc>
-<status status="FAIL" start="2025-05-18T22:10:34.938142" elapsed="20.662026"/>
+<status status="PASS" start="2025-05-19T10:48:01.277628" elapsed="23.073370"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="1" skip="0">Smoke Regression</stat>
 </tag>
 <suite>
-<stat name="Test LoginwithResources" id="s1" pass="1" fail="1" skip="0">Test LoginwithResources</stat>
+<stat name="Test DragDrop" id="s1" pass="1" fail="0" skip="0">Test DragDrop</stat>
 </suite>
 </statistics>
 <errors>

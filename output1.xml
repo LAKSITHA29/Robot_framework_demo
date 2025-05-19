@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T10:20:27.296077" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Google" source="C:\Robot_Framework_basics\Robot_framework_demo\Tests\Test_Google.robot">
+<test id="s1-t1" name="Search in google" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:00.905795" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T10:16:00.905530" elapsed="3.857371"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:04.764841" level="INFO">Typing text 'Selenium' into text field '//textarea[@class="gLFyf"]'.</msg>
+<arg>//textarea[@class="gLFyf"]</arg>
+<arg>Selenium</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T10:16:04.764127" elapsed="0.210180"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:04.977008" level="INFO">Sending key(s) ('ENTER',) to name:q element.</msg>
+<msg time="2025-05-19T10:16:05.460366" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-05-19T10:16:05.460505" level="INFO">Releasing special key ENTER.</msg>
+<arg>name:q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-19T10:16:04.976352" elapsed="2.242966"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:07.563230" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-19T10:16:07.563633" level="FAIL">Page should have contained text 'https://www.selenium.dev/' but did not.</msg>
+<arg>https://www.selenium.dev/</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-05-19T10:16:07.220230" elapsed="0.347379">Page should have contained text 'https://www.selenium.dev/' but did not.</status>
+</kw>
+<kw name="Page Should Contain Textfield" owner="SeleniumLibrary">
+<arg>class:gLFyf</arg>
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<status status="NOT RUN" start="2025-05-19T10:16:07.572133" elapsed="0.000090"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-05-19T10:16:07.572640" elapsed="0.000076"/>
+</kw>
+<status status="FAIL" start="2025-05-19T10:16:00.904274" elapsed="6.668975">*HTML* &lt;span class="merge"&gt;Test has been re-executed and results merged.&lt;/span&gt;&lt;hr&gt;&lt;span class="new-status"&gt;New status:&lt;/span&gt; &lt;span class="fail"&gt;FAIL&lt;/span&gt;&lt;br&gt;&lt;span class="new-message"&gt;New message:&lt;/span&gt; Page should have contained text '&lt;a href="https://www.selenium.dev/"&gt;https://www.selenium.dev/&lt;/a&gt;' but did not.&lt;br&gt;&lt;hr&gt;&lt;span class="old-status"&gt;Old status:&lt;/span&gt; &lt;span class="fail"&gt;FAIL&lt;/span&gt;&lt;br&gt;&lt;span class="old-message"&gt;Old message:&lt;/span&gt; Page should have contained text '&lt;a href="https://www.selenium.dev/"&gt;https://www.selenium.dev/&lt;/a&gt;' but did not.&lt;br&gt;</status>
+</test>
+<test id="s1-t2" name="Search in google with anotherkey" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:07.575913" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T10:16:07.575677" elapsed="4.193774"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:11.770374" level="INFO">Typing text 'robotframework' into text field '//textarea[@class="gLFyf"]'.</msg>
+<arg>//textarea[@class="gLFyf"]</arg>
+<arg>robotframework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T10:16:11.769921" elapsed="0.361277"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:12.132373" level="INFO">Sending key(s) ('ENTER',) to name:q element.</msg>
+<msg time="2025-05-19T10:16:12.595814" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-05-19T10:16:12.595999" level="INFO">Releasing special key ENTER.</msg>
+<arg>name:q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-19T10:16:12.131798" elapsed="0.478230"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:16:14.849282" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-19T10:16:14.849816" level="FAIL">Page should have contained text 'https://robotframework.org/' but did not.</msg>
+<arg>https://robotframework.org/</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-05-19T10:16:12.610584" elapsed="2.242422">Page should have contained text 'https://robotframework.org/' but did not.</status>
+</kw>
+<kw name="Page Should Contain Textfield" owner="SeleniumLibrary">
+<arg>class:gLFyf</arg>
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<status status="NOT RUN" start="2025-05-19T10:16:14.854954" elapsed="0.000091"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-05-19T10:16:14.858512" elapsed="0.000089"/>
+</kw>
+<status status="FAIL" start="2025-05-19T10:16:07.575102" elapsed="7.284420">*HTML* &lt;span class="merge"&gt;Test has been re-executed and results merged.&lt;/span&gt;&lt;hr&gt;&lt;span class="new-status"&gt;New status:&lt;/span&gt; &lt;span class="fail"&gt;FAIL&lt;/span&gt;&lt;br&gt;&lt;span class="new-message"&gt;New message:&lt;/span&gt; Page should have contained text '&lt;a href="https://robotframework.org/"&gt;https://robotframework.org/&lt;/a&gt;' but did not.&lt;br&gt;&lt;hr&gt;&lt;span class="old-status"&gt;Old status:&lt;/span&gt; &lt;span class="fail"&gt;FAIL&lt;/span&gt;&lt;br&gt;&lt;span class="old-message"&gt;Old message:&lt;/span&gt; Page should have contained text '&lt;a href="https://robotframework.org/"&gt;https://robotframework.org/&lt;/a&gt;' but did not.&lt;br&gt;</status>
+</test>
+<status status="FAIL" elapsed="13.953395"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Google" id="s1" pass="0" fail="2" skip="0">Test Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

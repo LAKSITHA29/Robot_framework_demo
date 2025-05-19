@@ -1,0 +1,72 @@
+1747631882079	geckodriver	INFO	Listening on 127.0.0.1:49293
+1747631885177	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49294" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\rust_mozprofile3dIDeH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747631885907	Marionette	INFO	Marionette enabled
+1747631886255	Marionette	INFO	Listening on port 49305
+WebDriver BiDi listening on ws://127.0.0.1:49294
+Read port: 49305
+1747631886489	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 431: TypeError: c(...).setup is not a function
+JavaScript error: https://jsc.mgid.com/site/884765.js, line 22: SecurityError: The operation is insecure.
+JavaScript error: https://jsc.mgid.com/site/884765.js, line 22: SecurityError: The operation is insecure.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval, line 346: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c04GJxG2svqA-HARjf4E7Ni6u2B3MFhp5bXBH8giHBM.js line 2 > eval line 346 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+1747631900614	Marionette	INFO	Stopped listening on port 49305
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1976 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Dynamically enable window occlusion 1
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 13: Script terminated by timeout at:
+B@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:449
+
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=45He55g2h1v855226469za200&tag_exp=101509157~103116025~103130495~103130497~103136993~103136995~103200001~103207802~103233427~103252644~103252646~103263073~103301114~103301116~104506548, line 764: Script terminated by timeout at:
+aa.rj@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=45He55g2h1v855226469za200&tag_exp=101509157~103116025~103130495~103130497~103136993~103136995~103200001~103207802~103233427~103252644~103252646~103263073~103301114~103301116~104506548:764:30
+get@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=45He55g2h1v855226469za200&tag_exp=101509157~103116025~103130495~103130497~103136993~103136995~103200001~103207802~103233427~103252644~103252646~103263073~103301114~103301116~104506548:762:119
+stop@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=45He55g2h1v855226469za200&tag_exp=101509157~103116025~103130495~103130497~103136993~103136995~103200001~103207802~103233427~103252644~103252646~103263073~103301114~103301116~104506548:762:87
+aa.Pn/c/<@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=45He55g2h1v855226469za200&tag_exp=101509157~103116025~103130495~103130497~103136993~103136995~103200001~103207802~103233427~103252644~103252646~103263073~103301114~103301116~104506548:762:412
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1976 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+H@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1976 > eval line 1 > eval line 1 > eval:1:24
+@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1976 > eval line 1 > eval line 1 > eval:1:160
+XI@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1976 > eval line 1 > eval line 1 > eval:1:190
+OR@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1976 > eval line 1 > eval line 1 > eval:1:49
+B.K</<@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval:1976:51982
+UR@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval:1976:24233
+a@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval:1976:15232
+t@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval:1976:11833
+a/<@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval:1976:15689
+a5</<@https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval:1976:48432
+
+JavaScript warning: https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:160,%22origin%22:%22publishertagids%22,%22requestId%22:%220.3309663988849284%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:160,%22origin%22:%22publishertagids%22,%22requestId%22:%220.3309663988849284%22}:13:3137
+r/<@https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:160,%22origin%22:%22publishertagids%22,%22requestId%22:%220.3309663988849284%22}:13:3642
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

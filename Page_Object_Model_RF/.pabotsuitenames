@@ -1,0 +1,8 @@
+datasources:49a24cc110354de9a17ca527327934d141418c53
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:38b10ecfccae82d0ce75153d132c2208bd85f19e
+--test LoginPageTest.Validate Unsuccessful login using valid credentials
+--test LoginPageTest.Validate Unsuccessful login for blank username
+--test LoginPageTest.Validate Unsuccessful login for blank password
+--test LoginPageTest.Validate successful login

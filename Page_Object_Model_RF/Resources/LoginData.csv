@@ -1,0 +1,5 @@
+*** Test cases ***,${username},${password}
+Invalid Username,abc,admin123
+Invalid password,Admin,123
+Invalid credentials,abc,123
+Numbers,1234,5678

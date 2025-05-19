@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T14:09:35.794394" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginPageTest" source="C:\Robot_Framework_basics\Page_Object_Model_RF\Testcases\LoginPageTest.robot">
+<test id="s1-t1" name="Validate Unsuccessful login using valid credentials" line="10">
+<kw name="Open the Browser with the URL" owner="GenericResources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:36.577867" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T14:09:36.577179" elapsed="11.417024"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T14:09:47.994833" elapsed="0.975689"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T14:09:48.970957" elapsed="0.003184"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:36.575203" elapsed="12.399272"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:48.977503" level="INFO">Typing text 'Admin' into text field 'css:input[name=username]'.</msg>
+<arg>css:input[name=username]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:48.976369" elapsed="1.871478"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:50.849227" level="INFO">Typing password into text field 'css:input[name=password]'.</msg>
+<msg time="2025-05-19T14:09:50.911481" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name=password]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:50.848318" elapsed="0.533150"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-19T14:09:56.383389" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-19T14:09:51.381860" elapsed="5.001772"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:56.384375" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>css:.orangehrm-login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:56.383967" elapsed="1.460289"/>
+</kw>
+<arg>${valid_uname}</arg>
+<arg>${invalid_pass}</arg>
+<status status="PASS" start="2025-05-19T14:09:48.975049" elapsed="8.870498"/>
+</kw>
+<kw name="Verify the error msg is correct" owner="LoginResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:57.848097" level="INFO">Verifying element 'xpath://p[@class="oxd-text oxd-text--p oxd-alert-content-text"]' contains exact text 'Invalid credentials'.</msg>
+<arg>${login_error_msg}</arg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T14:09:57.847422" elapsed="1.210972"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:57.846582" elapsed="1.212086"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-19T14:09:59.060024" elapsed="6.209847"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:59.059235" elapsed="6.211260"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:36.573125" elapsed="28.697594"/>
+</test>
+<status status="PASS" start="2025-05-19T14:09:35.832066" elapsed="29.440868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginPageTest" id="s1" pass="1" fail="0" skip="0">LoginPageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

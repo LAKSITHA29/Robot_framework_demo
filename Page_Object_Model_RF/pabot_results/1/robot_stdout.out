@@ -1,0 +1,23 @@
+==============================================================================
+LoginPageTest                                                                 
+==============================================================================
+Validate Unsuccessful login for blank username                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Robot_Framework_basics\Page_Object_Model_RF\Testcases\LoginPageTest.robot:14
+    T:  Validate Unsuccessful login for blank username    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Robot_Framework_basics\Page_Object_Model_RF\Testcases\LoginPageTest.robot:16
+      Verify the error msg is displayed for password    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Robot_Framework_basics\Page_Object_Model_RF\Resources\LoginResources.robot:29
+      Element Text Should Be    ${required_pass_msg}    Required
+      |  ${required_pass_msg} = xpath=(//div[@class='oxd-input-group oxd-input-field-bottom-space'])[2]/span (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=(//div[@class='oxd-input-group oxd-input-field-bottom-space'])[2]/span' not found.
+------------------------------------------------------------------------------
+LoginPageTest                                                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Robot_Framework_basics\Page_Object_Model_RF\pabot_results\1\output.xml

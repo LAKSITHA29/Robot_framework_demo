@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T14:09:35.805880" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginPageTest" source="C:\Robot_Framework_basics\Page_Object_Model_RF\Testcases\LoginPageTest.robot">
+<test id="s1-t1" name="Validate Unsuccessful login for blank password" line="18">
+<kw name="Open the Browser with the URL" owner="GenericResources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:36.534989" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T14:09:36.534349" elapsed="10.798934"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T14:09:47.333944" elapsed="1.892242"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T14:09:49.226605" elapsed="0.005767"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:36.532809" elapsed="12.699864"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:49.235454" level="INFO">Typing text 'Admin' into text field 'css:input[name=username]'.</msg>
+<arg>css:input[name=username]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:49.234403" elapsed="3.731737"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:52.967611" level="INFO">Typing password into text field 'css:input[name=password]'.</msg>
+<msg time="2025-05-19T14:09:53.197991" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name=password]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:52.966655" elapsed="0.365146"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-19T14:09:58.334185" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-19T14:09:53.332261" elapsed="5.002352"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:58.335479" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>css:.orangehrm-login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:58.334981" elapsed="1.357555"/>
+</kw>
+<arg>${valid_uname}</arg>
+<arg>${blank_pass}</arg>
+<status status="PASS" start="2025-05-19T14:09:49.233269" elapsed="10.459572"/>
+</kw>
+<kw name="Verify the error msg is displayed for password" owner="LoginResources">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-19T14:10:04.696071" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-19T14:09:59.694500" elapsed="5.001802"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:04.697339" level="INFO">Verifying element 'xpath=(//div[@class='oxd-input-group oxd-input-field-bottom-space'])[2]/span' contains exact text 'Required'.</msg>
+<arg>${required_pass_msg}</arg>
+<arg>Required</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T14:10:04.696686" elapsed="0.073314"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:59.693367" elapsed="5.076915"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-19T14:10:04.771727" elapsed="2.350589"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:04.770841" elapsed="2.352089"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:36.531420" elapsed="30.591906"/>
+</test>
+<status status="PASS" start="2025-05-19T14:09:35.841516" elapsed="31.284885"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginPageTest" id="s1" pass="1" fail="0" skip="0">LoginPageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

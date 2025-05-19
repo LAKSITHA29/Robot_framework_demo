@@ -1,0 +1,9 @@
+==============================================================================
+LoginPageTest                                                                 
+==============================================================================
+Validate Unsuccessful login for blank password                        | PASS |
+------------------------------------------------------------------------------
+LoginPageTest                                                         | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Robot_Framework_basics\Page_Object_Model_RF\pabot_results\2\output.xml
